@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>FBR</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  
+  <!-- Bootstrap JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  
+  <!-- Bootstrap JS -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="bind.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section class="container-fluid">
+  <div class="container" style="margin-top: 25; margin-bottom: 20px;">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="row pull-right" style="margin-right: 27px;">
+          <div class="col-md-12 text-right">
+            <a class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a class="social-icon"><i class="fab fa-youtube"></i></a>
+            <a class="social-icon"><i class="fab fa-facebook"></i></a>
+            <a class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a class="social-icon"><i class="fab fa-linkedin"></i></a>
+            <div style="float: right; margin-right: -40px; margin-left: 30px;">
+              <button class="btn btn-primary btn-sm" >اُردو</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-12 col-md-6 col-lg-6">
+        <img id="logo" src="https://download1.fbr.gov.pk/MediaManager/english/images/FBR-Logo.png" class="img-responsive" alt="Placeholder image">
+
+    </div>
+  </div>
+</section>
+
+<div style="background-color: #f8f8f8; margin-top: 10px;" class="col-xs-12 col-md-12">
+    <div class="row" >
+        <div class="col-xs-12 col-md-2 col-sm-6" style="background-color: #f8f8f8;">
+            <a><img src="https://download1.fbr.gov.pk/MediaManager/english/images/FBRLatestUpdatesEng.png" class="img-responsive" alt="Placeholder image" ></a>
+        </div>
+        <div style="padding-top: 8px; background-color: #f8f8f8;" class="col-xs-12 col-md-10 col-sm-6 m-news-m">
+            <p>
+              <marquee direction="left" height="20" onmouseout="this.start();" onmouseover="this.stop();" scrollamount="3">
+                <b>
+                  <span><img src="https://download1.fbr.gov.pk/MediaManager/english/Images/arrow-news.png" /> Tutorials for filing of Tax Returns for Tax Year-2023</span>
+                  <span><img src="https://download1.fbr.gov.pk/MediaManager/english/Images/arrow-news.png" /> Extension in Date of Filing of Income Tax Returns for Tax Year 2023 till 31st October, 2023</span>
+                  <span><img src="https://download1.fbr.gov.pk/MediaManager/english/Images/arrow-news.png" /> FBR Surpasses Target by RS. 63 Billion</span>
+                  <span><img src="httpsdownload1.fbr.gov.pk/MediaManager/english/Images/arrow-news.png" /> FBR's Systems Functioning Efficiently to Ensure Smooth Return Filing</span>
+                  <span><img src="https://download1.fbr.gov.pk/MediaManager/english/Images/arrow-news.png" /> Point-wise reply of Issues Raised by Karachi Tax Bar Association</span>
+                  <span><img src="https://download1.fbr.gov.pk/MediaManager/english/Images/arrow-news.png" /> Beware of fraudulent emails - FBR cautions taxpayers against spammers/scammers!</span>
+                  <span><img src="https://download1.fbr.gov.pk/MediaManager/english/Images/arrow-news.png" /> Follow FBR Social Media Handles</span>
+                  <span><img src="https://download1.fbr.gov.pk/MediaManager/english/Images/arrow-news.png" /> Online Filing Services</span>
+                </b>
+              </marquee>
+            </p>
+        </div>
+    </div>
+    <div class="col-md-12" id="main-menu" style="clear: both; margin: 0; padding: 0;">
+        <div style="background-color: #1a97ef; padding: -2px 0 10px 0; margin-top: 4px; text-align: center;">
+            <div class="header-section">
+                <div class="container">
+                    <nav class="navbar navbar-default" id="navbar">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu-section" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                        <div class="collapse navbar-collapse" id="main-menu-section">
+                            <ul class="nav navbar-nav navbar-left">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#">About Us</a>
+                                    <ul class="dropdown-menu" id="products-menu">
+                                        <li class="list-group-item"><a class="dropdown-item" href="#">Introduction</a></li>
+                                        <li class="list-group-item"><a class="dropdown-item" href="#">Vision, Mission & Values</a></li>
+                                        <li class="list-group-item"><a class="dropdown-item" href="#">Organizational KPIs</a></li>
+                                        <li class="list-group-item"><a class="dropdown-item" href="#">Organizational Chart</a></li>
+                                        <li class="list-group-item"><a class="dropdown-item" href="#">Members of the Board</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown add-divider">
+                                    <a class="nav-link dropdown-toggle" href="#">Wings/Directorates</a>
+                                    <ul class="dropdown-menu" id="products-menu">
+                                        <li class="list-group-item"><a class="dropdown-item" href="#">Inland Revenue</a></li>
+                                        <li class="list-group-item"><a class="dropdown-item" href="#">Customs</a></li>
+                                        <li class="list-group-item"><a class="dropdown-item" href="#">Admn & HR</a></li>
+                                        <li class="list-group-item"><a class="dropdown-item" href="#">Public Relations</a></li>
+                                        <li class="list-group-item"><a class="dropdown-item" href="#">Information Technology</a></li>
+                                        <li class="list-group-item"><a class="dropdown-item" href="#">Legal</a></li>
+                                        <li class="list-group-item"><a class="dropdown-item" href="#">Dte Gen of International Taxes</a></li>
+                                        <li class="list-group-item"><a class="dropdown-item" href="#">Accounting & Audit</a></li>
+                                        <li class="list-group-item"><a class="dropdown-item" href="#">Reforms & Modernization</a></li>
+                                        <li class="list-group-item"><a class="dropdown-item" href="#">Legal & Accounting - Customs</a></li>
+                                        <li class="list-group-item"><a class ="dropdown-item" href="#">Directorates</a></li>
+                                    </ul>
+                                </li>
+                                <li class="add-divider">
+                                    <a>Finance Minister</a>
+                                </li>
+                                <li class="add-divider">
+                                    <a>SA to PM on Revenue / MoS</a>
+                                </li>
+                                <li class="add-divider">
+                                    <a>Chairman</a>
+                                </li>
+                                <li class="nav-item dropdown add-divider">
+                                    <a class="nav-link dropdown-toggle">Newsroom</a>
+                                    <ul class="dropdown-menu" id="products-menu">
+                                        <li class="list-group-item"><a class="dropdown-item">Press Releases</a></li>
+                                        <li class="list-group-item"><a class="dropdown-item">Events</a></li>
+                                        <li class="list-group-item"><a class="dropdown-item">Videos</a></li>
+                                        <li class="list-group-item"><a class="dropdown-item">Tutorials</a></li>
+                                        <li class="list-group-item"><a class="dropdown-item">Auctions</a></li>
+                                        <li class="list-group-item"><a class="dropdown-item">Tenders</a></li>
+                                        <li class="list-group-item"><a class="dropdown-item">Tax Directory</a></li>
+                                        <li class="list-group-item"><a class="dropdown-item">Budget 2023-24</a></li>
+                                        <li class= "list-group-item"><a class="dropdown-item">Newsletter</a></li>
+                                        <li class="list-group-item"><a class ="dropdown-item">Feedback</a></li>
+                                    </ul>
+                                </li>
+                                <li class="add-divider">
+                                    <a>Helpline</a>
+                                </li>
+                                <li class="add-divider">
+                                    <a>E-Mail</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="container-fluid sep" >
+        <div class="container" >
+            <div class="row services" >
+                <div class="col-xs-12 col-md-3 col-sm-6" style = "background-color: red;">
+                    <div class="service-box" >
+                        <h3>
+                            Online Services
+                        </h3>
+                        <ul class="list-group" style = "background-color: red;">
+                            <li class="list-group-item" style = "background-color: red;">
+                                <a><span style="color: #efff00;font-weight:bold;">FBR معلومات TaxRay</span> <img class="img-responsive" src="https://download1.fbr.gov.pk/MediaManager/english/images/fbr-info-logo.png" style="width:84px;position: absolute;bottom:10px;margin-left: 130px"></a>
+                            </li>
+                            <li class="list-group-item" style = "background-color: red;">
+                                <a>Income Tax<img class="img-responsive" src="https://download1.fbr.gov.pk/MediaManager/english/images/iris-logo-new.png" style="width:78px !important; position: absolute;bottom:10px;margin-left: 130px"></a>
+                            </li>
+                            <li class="list-group-item" style = "background-color: red;">
+                                <a>National Sales Tax Return</a>
+                            </li>
+                            <li class="list-group-item" style = "background-color: red;">
+                                <a>Customs<img class="img-responsive" src="https://download1.fbr.gov.pk/MediaManager/english/images/Weboc.png" style="width:60px;position: absolute;bottom:0px; margin-left: 130px"></a>
+                            </li>
+                            <li class="list-group-item" style = "background-color: red;">
+                                <a title="Active Taxpayer List Income Tax">ATL(Income Tax)</a>
+                            </li>
+                            <li class="list-group-item" style = "background-color: red;">
+                                <a title="Active Taxpayer List Sales Tax">ATL (Sales Tax)</a>
+                            </li>
+                            <li class="list-group-item" style = "background-color: red;">
+                                <a>e-Payment</a>
+                            </li>
+                            <li class="list-group-item" style = "background-color: red;">
+                                <a>Online Verification Portal</a>
+                            </li>
+                            <li class="list-group-item" style = "background-color: red;">
+                                <a title="Please click to see more">More..</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <p>
+                        &nbsp;
+                    </p>
+                </div>
+                <div class="col-xs-12 col-md-3 col-sm-6"style = "background-color: blue">
+                    <div class="service-box">
+                        <h3>
+                            Income Tax
+                        </h3>
+                        <ul class="list-group" style = "background-color: blue">
+                            <li class="list-group-item" style = "background-color: blue">
+                                <a>Income Tax Basics</a>
+                            </li>
+                            <li class="list-group-item" style = "background-color: blue">
+                                <a>Register For Income Tax</a>
+                            </li>
+                            <li class="list-group-item" style = "background-color: blue">
+                                <a>Change Your Personal Details</a>
+                            </li>
+                            <li class="list-group-item" style = "background-color: blue">
+                                <a>File Income Tax Return</a>
+                            </li>
+                            <li class="list-group-item" style = "background-color: blue">
+                                <a>Active Taxpayer List (ATL)</a>
+                            </li>
+                            <li class="list-group-item"style = "background-color: blue" >
+                                <a>Withholding Tax Rates</a>
+                            </li>
+                            <li class="list-group-item"style = "background-color: blue">
+                                <a>Pay Income Tax</a>
+                            </li>
+                            <li class="list-group-item"style = "background-color: blue">
+                                <a>Income Tax Return Form</a>
+                            </li>
+                            <li class="list-group-item"style = "background-color: blue">
+                                <a>More...</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-3 col-sm-6"style = "background-color: green">
+                    <div class="service-box" style = "background-color: green">
+                        <h3>
+                            Sales Tax/FED
+                        </h3>
+                        <ul class="list-group">
+                            <li class="list-group-item" style = "background-color: green">
+                                <a>Sales Tax Basics</a>
+                            </li>
+                            <li class="list-group-item" style = "background-color: green">
+                                <a>Register For Sales Tax</a>
+                            </li>
+                            <li class="list-group-item" style = "background-color: green"> 
+                                <a>File Sales Tax Return</a>
+                            </li>
+                            <li class="list-group-item" style = "background-color: green">
+                                <a>Active Taxpayer List (ST)</a>
+                            </li>
+                            <li class="list-group-item" style = "background-color: green">
+                                <a>Sales Tax Refund</a>
+                            </li>
+                            <li class="list-group-item" style = "background-color: green">
+                                <a>Sales Tax Payment</a>
+                            </li>
+                            <li class="list-group-item" style = "background-color: green">
+                                <a>Point Of Sale (POS)</a>
+                            </li>
+                            <li class="list-group-item" style = "background-color: green">
+                                <a>Federal Excise Duty Basics</a>
+                            </li>
+                            <li class="list-group-item" style = "background-color: green">
+                                <a>More...</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-3 col-sm-6"style = "background-color: rgb(37, 162, 158)">
+                    <div class="service-box">
+                        <h3>
+                            Customs
+                        </h3>
+                        <ul class="list-group" >
+                            <li class="list-group-item" style = "background-color: rgb(37, 162, 158)">
+                                <a>Customs Basics</a>
+                            </li>
+                            <li class="list-group-item" style = "background-color: rgb(37, 162, 158)">
+                                <a>Register For Customs</a>
+                            </li>
+                            <li class="list-group-item" style = "background-color: rgb(37, 162, 158)">
+                                <a>Travel Guide</a>
+                            </li>
+                            <li class="list-group-item" style = "background-color: rgb(37, 162, 158)">
+                                <a>Vehicles</a>
+                            </li>
+                            <li class="list-group-item" style = "background-color: rgb(37, 162, 158)">
+                                <a>Customs Tariff</a>
+                            </li>
+                            <li class="list-group-item" style = "background-color: rgb(37, 162, 158)">
+                                <a >Duty Calculator</a>
+                            </li>
+                            <li class="list-group-item" style = "background-color: rgb(37, 162, 158)">
+                                <a>DIRBS</a>
+                            </li>
+                            <li class="list-group-item" style = "background-color: rgb(37, 162, 158)">
+                                <a>Customs Valuation</a>
+                            </li>
+                            <li class="list-group-item" style = "background-color: rgb(37, 162, 158)">
+                                <a>More...</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid online-filing-services" style="padding-bottom:70px;" id="fservice">
+        <h2><i style="margin-bottom: 24px;" class="fa fa-file-o"></i>  Online Filing Services</h2>
+        <div class="container">
+            <div class="row services featured-article">
+                <div class="col-xs-12 col-md-3 col-sm-6">
+                    <div class="service-box">
+                        <a><img alt="" src="https://download1.fbr.gov.pk/MediaManager/english/images/FileIncomeTaxReturn.jpg" title=""></a><br>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-3 col-sm-6">
+                    <div class="service-box">
+                        <a><img alt="" class="img-responsive" src="https://download1.fbr.gov.pk/MediaManager/1-19-47d5ab7d-371a-448e-adf4-2f015612b4f3-national_sales_tax_banner2.png" title=""></a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-3 col-sm-6">
+                    <div class="service-box">
+                        <a><img alt="" class="img-responsive" src="https://download1.fbr.gov.pk/MediaManager/english/images/FileGoodsDeclarations.jpg" title=""></a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-3 col-sm-6">
+                    <div class="service-box">
+                        <a><img alt="" class="img-responsive" src="https://download1.fbr.gov.pk/MediaManager/english/images/e-payment.jpg" title=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid featured-section" style="padding-bottom:70px;">
+        <h2><i style="margin-bottom: 24px;" class="fa fa-newspaper-o"></i>  Featured</h2>
+        <div class="container">
+            <div class="row services featured-article">
+                <div class="col-xs-12 col-md-3 col-sm-6">
+                    <div class="service-box">
+                        <a><img alt="" src="https://download1.fbr.gov.pk/MediaManager/Income-Tax-Return-For-Year-2023.png" title=""></a><br>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-3 col-sm-6">
+                    <div class="service-box">
+                        <a><img alt="" src="https://download1.fbr.gov.pk/MediaManager/maloomat-fbr.png" title=""></a><br>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-3 col-sm-6">
+                    <div class="service-box">
+                        <a><img alt="" src="https://download1.fbr.gov.pk/MediaManager/1-19-4db08c95-6905-4742-b40d-ffe37d3b024b-FATF(2).jpg" title=""></a><br>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-3 col-sm-6">
+                    <div class="service-box">
+                        <a><img alt="" src="https://download1.fbr.gov.pk/MediaManager/hamonization.png" title=""></a><br>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-3 col-sm-6">
+                    <div class="service-box">
+                        <a> <img alt="" class="img-responsive" src="https://download1.fbr.gov.pk/MediaManager/english/images/ftoaffairs.jpg" title=""> </a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-3 col-sm-6">
+                    <div class="service-box">
+                        <a><img alt="" src="https://download1.fbr.gov.pk/MediaManager/1-19-8431fc0b-ca4d-438d-8f04-12447f104e06-Tracktrace.jpg" title=""></a><br>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-3 col-sm-6">
+                    <div class="service-box">
+                        <a><img alt="" src="https://download1.fbr.gov.pk/MediaManager/1-19-1e7f117f-fb40-4cba-9b1c-bdba8124c487-HSTranspositionTable.png" title=""></a><br>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-3 col-sm-6">
+                    <div class="service-box">
+                        <a> <img alt="" class="img-responsive" src="https://download1.fbr.gov.pk/MediaManager/english/images/CustomsValuations.jpg" title=""> </a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-3 col-sm-6">
+                    <div class="service-box">
+                        <a> <img alt="" class="img-responsive" src="https://download1.fbr.gov.pk/MediaManager/english/images/ValuationofImmovablePropertiesSmall.jpg" title=""> </a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-3 col-sm-6">
+                    <div class="service-box">
+                        <a> <img alt="" class="img-responsive" src="https://download1.fbr.gov.pk/MediaManager/english/images/EaseOfDoingBusiness.jpg" title=""> </a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-3 col-sm-6">
+                    <div class="service-box">
+                        <a> <img alt="" class="img-responsive" src="https://download1.fbr.gov.pk/MediaManager/english/images/ExportFacilitationSchemes.jpg" title=""> </a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-3 col-sm-6">
+                    <div class="service-box">
+                        <a> <img alt="" class="img-responsive" src="https://download1.fbr.gov.pk/MediaManager/english/images/POSIntegration2020.jpg" title=""> </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid sep" style="padding-bottom:70px;" id="fservice">
+
+        <h2><i style="margin-bottom: 24px;" class="fa fa-file-o"></i> Videos &amp; Tutorials </h2>
+        <div class="container">
+            <div class="row services featured-article">
+    
+                <div class="col-xs-12 col-md-3 col-sm-6">
+    
+                    <div class="mb-10">
+                        <a> <img alt="" class="img-responsive" src="https://download1.fbr.gov.pk/MediaManager/english/images/IncomeTaxVideoTutorial.jpg" title=""> </a>
+                        <div style="border: #D6D6D6 1px solid; padding-left: 10px;">
+                            <h4>
+                                <a style="font-size: small">Income Tax Return Filing</a>
+                            </h4>
+                            <p class="text-left" style="font-size: small">
+                                Video Tutorials
+                            </p>
+                        </div>
+                    </div>
+    
+                </div>
+    
+                <div class="col-xs-12 col-md-3 col-sm-6">
+    
+                    <div class="mb-10">
+                        <a> <img alt="" class="img-responsive" src="https://download1.fbr.gov.pk/MediaManager/english/images/taxassan.jpg" title=""> </a>
+                        <div style="border: #D6D6D6 1px solid; padding-left: 10px;">
+                            <h4>
+                                <a><font size="2">Tax Asaan</font></a>
+                            </h4>
+                            <p class="text-left" style="font-size: small">
+                                Videos &amp; Tutorials
+                            </p>
+                        </div>
+                    </div>
+    
+                </div>
+    
+                <div class="col-xs-12 col-md-3 col-sm-6">
+    
+                    <div class="mb-10">
+                        <a> <img alt="" class="img-responsive" src="https://download1.fbr.gov.pk/MediaManager/english/images/FBRtvcs.jpg" title=""> </a>
+                        <div style="border: #D6D6D6 1px solid; padding-left: 10px;">
+                            <h4>
+                                <a style="font-size: small">FBR TVCs</a>
+                            </h4>
+                            <p class="text-left" style="font-size: small">
+                                FBR TVCs
+                            </p>
+                        </div>
+                    </div>
+    
+                </div>
+    
+                <div class="col-xs-12 col-md-3 col-sm-6">
+    
+                    <div class="mb-10">
+                        <a> <img alt="" class="img-responsive" src="https://download1.fbr.gov.pk/MediaManager/english/images/suplementary.jpg" title=""> </a>
+                        <div style="border: #D6D6D6 1px solid; padding-left: 10px;">
+                            <h4>
+                                <a><font size="2">Supplementary Tutorials</font></a>
+                            </h4>
+                            <p class="text-left" style="font-size: small">
+                                Supplementary Tutorials
+                            </p>
+                        </div>
+                    </div>
+    
+                </div>
+    
+            </div>
+    
+        </div>
+    </section>
+    
+        
+</body>
+<section class="container-fluid" id="fbrupdates">
+    <div class="container">
+        <div class="row">
+          
+            <div class="col-xs-12 col-md-3 col-sm-6">
+                <div class="legal-resources">
+                    <h6>Legal Resources / Publications</h6>
+                    <ul class="list-group">
+                        <li class="list-group-item">Acts</li>
+                        <li class="list-group-item">Ordinance</li>
+                        <li class="list-group-item">Rules</li>
+                        <li class="list-group-item">SROs / Notifications</li>
+                        <li class="list-group-item">Orders / Circulars</li>
+                        <li class="list-group-item">Publications / Brochures</li>
+                        <li class="list-group-item">Taxpayers Audit</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="col-xs-12 col-md-3 col-sm-6">
+                <div class="newsroom">
+                    <h6>Newsroom</h6>
+                    <ul class="list-group">
+                        <li class="list-group-item">Press Releases</li>
+                        <li class="list-group-item">Events</li>
+                        <li class="list-group-item">Tenders</li>
+                        <li class="list-group-item">Auctions</li>
+                        <li class="list-group-item">Feedback</li>
+                        <li class="list-group-item">Tax Directory</li>
+                        <li class="list-group-item">Budget 2023-24</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="col-xs-12 col-sm-6 col-md-6">
+                <h6>Updates</h6>
+                <ul class="list-group vertical-menu">
+                    <li class="list-group-item">Chairman FBR Holds E-Kachehri</li>
+                    <li class="list-group-item">Chairman NADRA Calls on Chairman FBR</li>
+                    <li class="list-group-item">S.R.O1480(I)/2023 - Jurisdiction of Collectorates - Amending SRO</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="container-fluid footer" style="background-color: rgb(81, 81, 214);">
+    <div class="container">
+        <div class="row">
+            
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-md-3 col-sm-12">
+                <h6>Stay Connected</h6>
+                <ul class="list-group follow">
+                    <li>
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-square-o fa-stack-2x"></i>
+                            <i class="fa fa-facebook fa-stack-1x"></i>
+                        </span>Facebook
+                    </li>
+                    <li>
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-square-o fa-stack-2x"></i>
+                            <i class="fa fa-twitter fa-stack-1x"></i>
+                        </span>Twitter
+                    </li>
+                    <li>
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-square-o fa-stack-2x"></i>
+                            <i class="fa fa-youtube-play fa-stack-1x"></i>
+                        </span>YouTube
+                    </li>
+                    <li>
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-square-o fa-stack-2x"></i>
+                            <i class="fa fa-envelope fa-stack-1x"></i>
+                        </span>Official Email (FBR Employees)
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-xs-12 col-md-3 col-sm-12">
+                <h6>Government Links</h6>
+                <ul class="list-group">
+                    <li class="list-group-item">Government of Pakistan</li>
+                    <li class="list-group-item">Government of AJK</li>
+                    <li class="list-group-item">Government of Balochistan</li>
+                    <li class="list-group-item">Government of Gilgit Baltistan</li>
+                    <li class="list-group-item">Government of Khyber Pakhtunkhwa</li>
+                    <li class="list-group-item">Government of Punjab</li>
+                    <li class="list-group-item">Government of Sindh</li>
+                </ul>
+            </div>
+
+            <div class="col-xs-12 col-md-3 col-sm-12">
+                <h6>Ministry Links</h6>
+                <ul class="list-group">
+                    <li class="list-group-item">Ministry of Finance</li>
+                    <li class="list-group-item">Ministry of Commerce</li>
+                    <li class="list-group-item">Ministry of Planning, Development & Special Initiatives</li>
+                    <li class="list-group-item">Ministry of Information Technology & Telecommunication</li>
+                    <li class="list-group-item">Ministry of Communications</li>
+                    <li class="list-group-item">Ministry of Railways</li>
+                    <li class="list-group-item">Ministry of Water & Power</li>
+                </ul>
+            </div>
+            <div class="col-xs-12 col-md-3 col-sm-12">
+                <h6>Other Sites</h6>
+                <ul class="list-group">
+                    <li class="list-group-item">Punjab Revenue Authority</li>
+                    <li class="list-group-item">Sindh Revenue Board</li>
+                    <li class="list-group-item">Khyber Pakhtunkhwa Revenue Authority</li>
+                    <li class="list-group-item">Balochistan Revenue Authority</li>
+                    <li class="list-group-item">FBR Foundation</li>
+                    <li class="list-group-item">Virtual One Stop Shop (VOSS) for business registration</li>
+                    <li class="list-group-item">Field Office Websites</li>
+                    <li class="list-group-item">State Bank of Pakistan</li>
+                    <li class="list-group-item">Securities and Exchange Commission of Pakistan</li>
+                    <li class="list-group-item">Trade Development Authority of Pakistan</li>
+                    <li class="list-group-item">Gwadar Development Authority</li>
+                </ul>
+            </div>
+            <div class="col-xs-12 col-md-3 col-sm-12">
+                &nbsp;
+            </div>
+</footer>
+
+
+<section class="container-fluid">
+    <div class="container" style="padding-top:20px; padding-bottom:15px;">
+        <div class="row cp">
+            <div class="col-xs-12 col-md-7 col-lg-7 col-sm-12" style="margin-top:10px">
+                Copyright
+            </div>
+            <div class="col-xs-12 col-md-3 col-lg-3 col-sm-12" style="margin-top:10px">
+                <a>Terms of Use</a> | <a>Privacy Policy</a>
+            </div>
+            <div class="col-xs-12 col-md-2 col-lg-2 col-sm-12">
+                <a target="_blank"><img src="https://www.fbr.gov.pk/images/pral.png"></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+</html>

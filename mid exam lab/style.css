@@ -1,0 +1,116 @@
+body {
+    background: url('bg.jpg');
+}
+
+#mask {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 9000;
+    background-color: #000;
+    display: none;
+}
+
+.window {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    z-index: 9999;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+#dialog {
+    width: 662px;
+    height: auto;
+    padding: 10px;
+    background-color: #ffffff;
+    font-family: 'Segoe UI Light', sans-serif;
+    font-size: 15pt;
+}
+
+.maintext {
+    text-align: center;
+    font-family: "Segoe UI", sans-serif;
+    text-decoration: none;
+}
+
+#popup-footer {
+    font-family: "Segoe UI", sans-serif;
+    font-size: 16pt;
+    padding: 10px 20px;
+    background-color: lightcyan;
+    width: 643px;
+}
+
+#popup-footer a {
+    text-decoration: none;
+}
+
+.agree:hover {
+    background-color: #D1D1D1;
+}
+
+.popup-option:hover {
+    background-color: #D1D1D1;
+    color: green;
+}
+
+.popup-option2:hover {
+    color: red;
+}
+
+#popup-box {
+    background-color: skyblue;
+}
+
+@media screen and (max-width: 900px) {
+    #dashboard-margin, #fbrcarousel {
+        display: none;
+    }
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.navbar-default .navbar-nav > li > a:link {
+    width: auto;
+    font-weight: normal;
+    color: white;
+}
+
+.navbar-default .navbar-nav > li > a:visited {
+    width: auto;
+    font-weight: bold;
+    color: white;
+}
+
+.add-divider {
+    color: black;
+    background-image: url(https://download1.fbr.gov.pk/MediaManager/english/images/dvidar.jpg);
+    background-repeat: repeat-y;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+div.navbar-header {
+    background-color: #1a97ef;
+}
+
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+    text-decoration: none;
+    color: white;
+    background-color: #428bca;
+}
+.nav-item {
+    z-index: 1; /* Increase the z-index value */
+  }
+  .navbar-nav .nav-link {
+    color: #000 !important; /* Apply the style with !important */
+  }
+    
