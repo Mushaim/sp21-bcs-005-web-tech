@@ -1,3 +1,5 @@
+
+
 body {
     background: url('bg.jpg');
 }
@@ -69,7 +71,7 @@ body {
 }
 
 @media screen and (max-width: 900px) {
-    #dashboard-margin, #fbrcarousel {
+    .navbar-default .navbar-nav .nav-item, .navbar-default .navbar-nav .nav-link {
         display: none;
     }
 }
@@ -78,13 +80,13 @@ body {
     display: block;
 }
 
-.navbar-default .navbar-nav > li > a:link {
+.navbar-default .navbar-nav .nav-item .nav-link:link {
     width: auto;
     font-weight: normal;
     color: white;
 }
 
-.navbar-default .navbar-nav > li > a:visited {
+.navbar-default .navbar-nav .nav-item .nav-link:visited {
     width: auto;
     font-weight: bold;
     color: white;
@@ -92,7 +94,7 @@ body {
 
 .add-divider {
     color: black;
-    background-image: url(https://download1.fbr.gov.pk/MediaManager/english/images/dvidar.jpg);
+    background-image: url('https://download1.fbr.gov.pk/MediaManager/english/images/dvidar.jpg');
     background-repeat: repeat-y;
     text-decoration: none;
     letter-spacing: 1px;
@@ -107,10 +109,7 @@ div.navbar-header {
     color: white;
     background-color: #428bca;
 }
-.nav-item {
-    z-index: 1; /* Increase the z-index value */
+.navbar-nav .nav-link {
+    color: #000 !important; 
   }
-  .navbar-nav .nav-link {
-    color: #000 !important; /* Apply the style with !important */
-  }
-    
+  
