@@ -1,0 +1,25 @@
+<%- include('layout/header')%>
+<div class="container">
+    <div class="row">
+        <div>
+            <h3 class="text-light">Edit Task(<%= task.name %>)</h3> 
+        </div>
+        <form action="/update/<%= task._id %>" method="post" id="add-form" enctype="multipart/form-data">
+            
+            <div class="mb-3">
+                <label for="task" class="form-label">Task:</label>
+                <input type="text" class="form-control" id="task" name="task" placeholder="Enter task" value="<%= task.name %>" required>
+            </div>
+    
+  
+            <div class="mb-3">
+                <label for="assignTo" class="form-label">Assign To:</label>
+                <input type="text" class="form-control" id="assignTo" name="assignTo" placeholder="Assign to" value="<%= task.assignedTo %>" required>
+            </div>
+
+
+            <button type="submit" class="btn btn-success">Update Task</button>
+        </form>
+    </div>
+</div>
+<%- include('layout/footer')%>

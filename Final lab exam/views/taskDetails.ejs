@@ -1,0 +1,12 @@
+<%- include('layout/header') %>
+<div class="container">
+    <div class="row">
+        <div>
+            <h3 class="text-light">Task Details</h3>
+            <p><strong>Task Name:</strong> <%= task.task %></p>
+            <p><strong>Assigned To:</strong> <%= task.assignedTo %></p>
+            <!-- Add more task details based on your Task model fields -->
+        </div>
+    </div>
+</div>
+<%- include('layout/footer') %>
